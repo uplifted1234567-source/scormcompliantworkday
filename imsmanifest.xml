@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="scormcompliantworkday" version="1.0" 
+  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adl_cp_v1_2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+    http://www.adlnet.org/xsd/adl_cp_v1_2 adlcp_v1p2.xsd">
+  
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  
+  <organizations default="SCO_Organization">
+    <organization identifier="SCO_Organization" structure="linear">
+      <title>Mastering SCORM Compliance and Accessibility for Workday eLearning Integration</title>
+      <item identifier="SCO_1" identifierref="Resource_1">
+        <title>Mastering SCORM Compliance and Accessibility for Workday eLearning Integration</title>
+      </item>
+    </organization>
+  </organizations>
+  
+  <resources>
+    <resource identifier="Resource_1" type="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="runtime-data.js"/>
+      <dependency identifierref="resource_images"/>
+    </resource>
+    <resource identifier="resource_images" type="asset">
+      <file href="assets/"/>
+    </resource>
+  </resources>
+</manifest>
